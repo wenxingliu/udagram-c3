@@ -13,7 +13,7 @@ spec:
         api: external        
     spec:
       containers:
-      - image: wenxingl/udacity-frontend:local
+      - image: wenxingl/udacity-frontend
         name: frontend
         imagePullPolicy: Always          
         ports:

@@ -15,4 +15,4 @@ services:
   frontend:
     build:
       context: ../../udacity-c3-frontend  
-    image: wenxingl/udacity-frontend:local
+    image: wenxingl/udacity-frontend

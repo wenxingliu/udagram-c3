@@ -3,7 +3,7 @@ services:
   reverseproxy:
       image: wenxingl/reverseproxy
       ports:
-          - 8080:8080
+          - "8080:8080"
       restart: always
       depends_on:
         - backend-user
@@ -35,6 +35,6 @@ services:
       JWT_SECRET: $JWT_SECRET
       URL: "http://localhost:8100"
   frontend:
-    image: wenxingl/udacity-frontend:local
+    image: wenxingl/udacity-frontend
     ports:
       - "8100:80"
